@@ -50,5 +50,6 @@ public class PlayerControl : MonoBehaviour
             Vector3 _jumped = new Vector3(0, 1, 0) * highjump;
     
             motor.Gohigh(_jumped);
+            
         }
 }

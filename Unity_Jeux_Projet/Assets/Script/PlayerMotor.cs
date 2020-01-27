@@ -46,6 +46,8 @@ public class PlayerMotor : MonoBehaviour
         PerformRotation();
         if (Input.GetButton("Jump"))
             PerformJump();
+        if (Input.GetButton("Jump")) ;
+            PerformDown();
     }
 
     private void PerformMovement()
@@ -66,6 +68,11 @@ public class PlayerMotor : MonoBehaviour
     {
         rb.MovePosition(rb.position + jumped);
     }
-    
+
+    private void PerformDown()
+    {
+        rb.MovePosition(rb.position - jumped);
+    }
+
 }
 
