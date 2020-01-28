@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float speed = 5;
-        public float sensitivity = 15;
-        public float highjump = 2;
-    
+    public float speed = 15;
+        public float sensitivity = 1;
+
         private PlayerMotor motor;
     
         private void Start()
@@ -44,12 +43,6 @@ public class PlayerControl : MonoBehaviour
             Vector3 _Vertrotation = new Vector3(xRot, 0, 0) * sensitivity;
     
             motor.RotateVert(_Vertrotation);
-            
-            //Saut du joueur 
-    
-            Vector3 _jumped = new Vector3(0, 1, 0) * highjump;
-    
-            motor.Gohigh(_jumped);
-            
+
         }
 }
