@@ -4,6 +4,7 @@ using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class Custom_Matchmaking_Room_Controller : MonoBehaviourPunCallbacks
 {
