@@ -17,9 +17,9 @@ public class Custom_Matchmaking_Lobby_Control : MonoBehaviourPunCallbacks
 
     private string roomName;
 
-    private int roomSize = 2;
+    private int roomSize = 2; //:taille de la room
 
-    private List<RoomInfo> roomListings;
+    private List<RoomInfo> roomListings; // liste de room
 
     [SerializeField] private Transform roomContainer;
 
@@ -27,13 +27,13 @@ public class Custom_Matchmaking_Lobby_Control : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.AutomaticallySyncScene = true; // tlm a les meme scenes
         lobbyConnectButton.SetActive(true);
         roomListings = new List<RoomInfo>();
         if (PlayerPrefs.HasKey("NickName"))
         {
 
-            if (PlayerPrefs.GetString("NickName") == "")
+            if (PlayerPrefs.GetString("NickName") == "") // creer un pseudo si tu n'en a pas
             {
                 PhotonNetwork.NickName = "Player " + Random.Range(0, 1000);
             }
@@ -44,7 +44,7 @@ public class Custom_Matchmaking_Lobby_Control : MonoBehaviourPunCallbacks
         }
         else
         {
-            PhotonNetwork.NickName = "player" + Random.Range(0, 1000);
+            PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
         }
 
         PlayerNameInput.text = PhotonNetwork.NickName;
@@ -53,12 +53,12 @@ public class Custom_Matchmaking_Lobby_Control : MonoBehaviourPunCallbacks
     public void PlayerNameUpdate(string nameInput)
     {
         PhotonNetwork.NickName = nameInput;
-        PlayerPrefs.SetString("NickName", nameInput);
+        PlayerPrefs.SetString("NickName", nameInput); //enregistre ton pseudo
     }
 
     public void JoinLobbyOnClick()
     {
-        mainPanel.SetActive(false);
+        mainPanel.SetActive(false); //passe a la scene des rooms
         lobbyPanel.SetActive(true);
         PhotonNetwork.JoinLobby();
     }
