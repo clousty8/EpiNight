@@ -72,8 +72,6 @@
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Lobby_Control.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Room_Controller.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\RoomButton.cs" />
-    <Compile Include="Assets\Scripts\Mouvement\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\Mouvement\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\NetworkController.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartLobbyController.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartRoomController.cs" />
@@ -113,6 +111,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
+    <None Include="Assets\asset\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
@@ -137,19 +136,19 @@
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -353,19 +352,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
