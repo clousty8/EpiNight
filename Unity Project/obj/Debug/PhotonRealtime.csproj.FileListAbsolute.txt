@@ -1,0 +1,2 @@
+C:\Users\Utilisateur\Desktop\Clousty8\travail\informatiques\EpiNight\Unity Project\obj\Debug\PhotonRealtime.csprojAssemblyReference.cache
+C:\Users\Utilisateur\Desktop\Clousty8\travail\informatiques\EpiNight\Unity Project\obj\Debug\PhotonRealtime.csproj.CoreCompileInputs.cache
