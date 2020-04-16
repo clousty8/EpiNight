@@ -1,2 +1,0 @@
-C:\Users\Utilisateur\Desktop\Clousty8\travail\informatiques\EpiNight\Unity Project\obj\Debug\PhotonChat.csprojAssemblyReference.cache
-C:\Users\Utilisateur\Desktop\Clousty8\travail\informatiques\EpiNight\Unity Project\obj\Debug\PhotonChat.csproj.CoreCompileInputs.cache

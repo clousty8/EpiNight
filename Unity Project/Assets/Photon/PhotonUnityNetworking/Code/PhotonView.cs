@@ -47,8 +47,7 @@ namespace Photon.Pun
         #endif
 
 
-        [NonSerialized]
-        private int ownerId; // TODO maybe changing this should trigger "Was Transfered"!?
+        [NonSerialized] public int ownerId; // TODO maybe changing this should trigger "Was Transfered"!?
 
         [FormerlySerializedAs("group")]
         public byte Group = 0;

@@ -78,6 +78,7 @@ public class Custom_Matchmaking_Room_Controller : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
+            PhotonNetwork.AutomaticallySyncScene = true;
             PhotonNetwork.LoadLevel(multiPlayerSceneIndex);
         }
     }

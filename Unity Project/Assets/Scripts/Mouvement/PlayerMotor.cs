@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
+using Photon.Pun.Demo.PunBasics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMotor : MonoBehaviour
+public class PlayerMotor : MonoBehaviourPun
 {
 
     [SerializeField]
@@ -12,12 +14,9 @@ public class PlayerMotor : MonoBehaviour
     private Vector3 velocity;
     private Vector3 rotation;
     private Vector3 Vertrotation;
-    private Vector3 jumped;
-    private Rigidbody rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
     }
 
     public void Move(Vector3 _velocity)
@@ -35,18 +34,15 @@ public class PlayerMotor : MonoBehaviour
         Vertrotation = _Vertrotation;
     }
 
-    public void Gohigh(Vector3 _jumped)
-    {
-        jumped = _jumped;
-    }
-    
     private void FixedUpdate()
     {
-        PerformMovement();
-        PerformRotation();
+        Rigidbody rb = this.gameObject.GetComponent<Rigidbody>();
+        
+        PerformMovement(rb);
+        PerformRotation(rb);
     }
 
-    private void PerformMovement()
+    private void PerformMovement(Rigidbody rb)
     {
         if (velocity != Vector3.zero)
         {
@@ -54,16 +50,12 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    private void PerformRotation()
+    private void PerformRotation(Rigidbody rb)
     {
         rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
         cam.transform.Rotate(-Vertrotation);
     }
-
-    private void PerformJump()
-    {
-        rb.MovePosition(rb.position + jumped);
-    }
+    
 
 }
 
