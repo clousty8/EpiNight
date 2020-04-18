@@ -15,8 +15,10 @@
     <explicitExcludes>
       <Path>.idea</Path>
       <Path>Build</Path>
+      <Path>Build2</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>
