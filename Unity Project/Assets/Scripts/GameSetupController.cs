@@ -28,7 +28,7 @@ public class GameSetupController : MonoBehaviour
     {
         Vector3 vector3 = new Vector3(-1, 0, -6);
         Debug.Log("Creating Player Master");
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITAMaster"), vector3, Quaternion.identity);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA"), vector3, Quaternion.identity);
     }
 
     // Update is called once per frame
