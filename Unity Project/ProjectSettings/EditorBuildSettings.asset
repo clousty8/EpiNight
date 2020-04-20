@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/kk 1.unity
     guid: c1c696a3be5b9bd4a9964a10c7257f9e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test movement.unity
     guid: 5dffe2c51c25e474c87364d1c80421fb
   - enabled: 0
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/testscene.unity
     guid: e19fd768f9c89b74fbafff6ba5c091d0
+  - enabled: 1
+    path: Assets/Scenes/NewTestPerso.unity
+    guid: f240900d5775fed41be60b229a1884d0
   m_configObjects: {}
