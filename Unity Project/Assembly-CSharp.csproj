@@ -76,6 +76,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\GameSetupController.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Lobby_Control.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Room_Controller.cs" />
@@ -83,8 +84,10 @@
     <Compile Include="Assets\Scripts\Mouvement\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Mouvement\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\NetworkController.cs" />
+    <Compile Include="Assets\Scripts\PickableObject.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartLobbyController.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartRoomController.cs" />
+    <Compile Include="Assets\Testdemerde.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

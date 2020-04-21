@@ -373,6 +373,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Door.cs" t="Include" />
           <e p="GameSetupController.cs" t="Include" />
           <e p="MatchmakingStart" t="Include">
             <e p="Custom_Matchmaking_Lobby_Control.cs" t="Include" />
@@ -386,6 +387,7 @@
             <e p="PlayerMotor.cs" t="Include" />
           </e>
           <e p="NetworkController.cs" t="Include" />
+          <e p="PickableObject.cs" t="Include" />
           <e p="QuickStart" t="Include">
             <e p="QuickStartLobbyController.cs" t="Include" />
             <e p="QuickStartRoomController.cs" t="Include" />
@@ -632,6 +634,7 @@
             </e>
           </e>
         </e>
+        <e p="Testdemerde.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">
