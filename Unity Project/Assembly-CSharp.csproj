@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\bonne.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -76,15 +77,22 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\GameSetupController.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Lobby_Control.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\Custom_Matchmaking_Room_Controller.cs" />
     <Compile Include="Assets\Scripts\MatchmakingStart\RoomButton.cs" />
+    <Compile Include="Assets\Scripts\Mouvement\Ennemy.cs" />
+    <Compile Include="Assets\Scripts\Mouvement\MasterController.cs" />
+    <Compile Include="Assets\Scripts\Mouvement\MasterMotor.cs" />
     <Compile Include="Assets\Scripts\Mouvement\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Mouvement\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\NetworkController.cs" />
-    <Compile Include="Assets\Scripts\PickableObject.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\Computer.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\Disjoncteur.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\Door.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\DoorLocked.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\OuverturePorte.cs" />
+    <Compile Include="Assets\Scripts\ObjectInteraction\PickableObject.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartLobbyController.cs" />
     <Compile Include="Assets\Scripts\QuickStart\QuickStartRoomController.cs" />
     <Compile Include="Assets\Testdemerde.cs" />
@@ -149,19 +157,19 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -365,19 +373,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Utilisateur/Desktop/Clousty8/travail/informatiques/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/yohan/Desktop/EpiNight/Unity Project/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -726,6 +734,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C65DF7E6-5082-3454-2A7F-EDDBED1731B5}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{827143B0-B1F1-9828-8ACD-9377537AE363}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>

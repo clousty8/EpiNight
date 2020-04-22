@@ -14,13 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MultiplayerSceneTest.unity
     guid: 86d1208826206ac49b529c0f2e739771
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/testscene.unity
     guid: e19fd768f9c89b74fbafff6ba5c091d0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NewTestPerso.unity
     guid: f240900d5775fed41be60b229a1884d0
   m_configObjects: {}

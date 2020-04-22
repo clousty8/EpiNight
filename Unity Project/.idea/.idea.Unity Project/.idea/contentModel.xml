@@ -373,7 +373,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Door.cs" t="Include" />
           <e p="GameSetupController.cs" t="Include" />
           <e p="MatchmakingStart" t="Include">
             <e p="Custom_Matchmaking_Lobby_Control.cs" t="Include" />
@@ -381,13 +380,21 @@
             <e p="RoomButton.cs" t="Include" />
           </e>
           <e p="Mouvement" t="Include">
+            <e p="Ennemy.cs" t="Include" />
             <e p="MasterController.cs" t="Include" />
             <e p="MasterMotor.cs" t="Include" />
             <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerMotor.cs" t="Include" />
           </e>
           <e p="NetworkController.cs" t="Include" />
-          <e p="PickableObject.cs" t="Include" />
+          <e p="ObjectInteraction" t="Include">
+            <e p="Computer.cs" t="Include" />
+            <e p="Disjoncteur.cs" t="Include" />
+            <e p="Door.cs" t="Include" />
+            <e p="DoorLocked.cs" t="Include" />
+            <e p="OuverturePorte.cs" t="Include" />
+            <e p="PickableObject.cs" t="Include" />
+          </e>
           <e p="QuickStart" t="Include">
             <e p="QuickStartLobbyController.cs" t="Include" />
             <e p="QuickStartRoomController.cs" t="Include" />
