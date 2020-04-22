@@ -41,7 +41,7 @@ public class GameSetupController : MonoBehaviour
         cam.name = "CameraMaster";*/
         Vector3 vector3 = new Vector3(-1828, 1, -386);
         Debug.Log("Creating Player Master");
-        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA 1"), vector3, Quaternion.identity);
+        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA"), vector3, Quaternion.identity);
 
         GameObjects.Add(test);
         Camera cam = test.GetComponentInChildren<Camera>();
@@ -51,9 +51,9 @@ public class GameSetupController : MonoBehaviour
 
     private void CreatePlayer()
     {
-        Vector3 vector3 = new Vector3(-1828, 1, -392);
+        Vector3 vector3 = new Vector3(-1878, 1, -129);
         Debug.Log("Creating Player");
-        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA"), vector3, Quaternion.identity);
+        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA2"), vector3, Quaternion.identity);
         GameObjects.Add(test);
         Camera cam = test.GetComponentInChildren<Camera>();
         Cameras.Add(cam);

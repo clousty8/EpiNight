@@ -3336,6 +3336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Open0
       objectReference: {fileID: 0}
+    - target: {fileID: 4340392654292899906, guid: 6bcf090b830aaae41803c374f774ba7d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4340392654292899907, guid: 6bcf090b830aaae41803c374f774ba7d,
         type: 3}
       propertyPath: m_Controller
@@ -3747,7 +3752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 189508, guid: 80b4ccf6342b92b4dbe97f6fdef892cf, type: 3}
       propertyPath: m_Name
-      value: PC-Portable-Demi-Lune
+      value: PC-Portable-MiniLab
       objectReference: {fileID: 0}
     - target: {fileID: 194690, guid: 80b4ccf6342b92b4dbe97f6fdef892cf, type: 3}
       propertyPath: m_IsActive
@@ -3945,6 +3950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5d86e7bda469047bab5584340259f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  already_used: 0
 --- !u!1 &1968408833
 GameObject:
   m_ObjectHideFlags: 0
