@@ -353,6 +353,9 @@
             </e>
           </e>
         </e>
+        <e p="QuestJoueur1.cs" t="Include" />
+        <e p="QuestJoueur2.cs" t="Include" />
+        <e p="Quête.cs" t="Include" />
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">

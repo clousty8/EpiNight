@@ -16,9 +16,8 @@ public class GameSetupController : MonoBehaviour
     public List<GameObject> GameObjects = new List<GameObject>();
     public List<Camera> Cameras = new List<Camera>();
 
-    public Text Text;
-
-    public Text Loose;
+    [SerializeField] Text Text;
+    [SerializeField] Text Loose;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +41,7 @@ public class GameSetupController : MonoBehaviour
         cam.name = "CameraMaster";*/
         Vector3 vector3 = new Vector3(-1828, 1, -386);
         Debug.Log("Creating Player Master");
-        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA"), vector3, Quaternion.identity);
+        var test = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "EPITA 1"), vector3, Quaternion.identity);
 
         GameObjects.Add(test);
         Camera cam = test.GetComponentInChildren<Camera>();
